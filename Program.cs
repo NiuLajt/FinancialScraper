@@ -24,9 +24,9 @@ Console.CancelKeyPress += (sender, e) =>
 };
 
 
-WebsiteScrapper scrapper = new("https://www.investing.com/markets/");
+WebsiteScraper scrapper = new("https://www.investing.com/markets/");
 
-// repeat scrapping data regularly at specified intervals
+// repeat scraping data regularly at specified intervals
 while (!cts.Token.IsCancellationRequested)
 {
     var data = await scrapper.ExtractValuesAsData();

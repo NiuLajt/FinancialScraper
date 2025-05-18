@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace FinancialScrapper
 {
-    internal class WebsiteScrapper(string url)
+    internal class WebsiteScraper(string url)
     {
         private readonly string _url = url;
 
